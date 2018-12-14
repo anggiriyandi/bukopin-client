@@ -1,0 +1,6 @@
+ <mux class="org.jpos.q2.iso.QMUX" logger="Q2" name="bukopin">
+	<in>bukopin-channel-receive</in>
+	<out>bukopin-channel-send</out>
+	<ready>bukopin-channel.ready</ready>
+	<key>11,12</key>
+</mux>

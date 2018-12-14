@@ -1,0 +1,14 @@
+ <channel-adaptor name='bukopin-channel' logger="Q2" realm="bukopin-client">
+ <channel class="id.co.finnet.bukopinclient.iso8583.BukopinChannel"
+ packager="id.co.finnet.bukopinclient.iso8583.BukopinPackager"
+  logger="Q2"
+  realm="bukopin-client">
+	 <property name="host" value="127.0.0.1" />
+	 <property name="port" value="8000" />
+	 <property name="timeout" value="30000" />
+ </channel>
+
+ <in>bukopin-channel-send</in>
+ <out>bukopin-channel-recive</out>
+ <reconnect-delay>10000</reconnect-delay>
+</channel-adaptor>
