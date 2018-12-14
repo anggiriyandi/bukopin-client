@@ -9,6 +9,6 @@
  </channel>
 
  <in>bukopin-channel-send</in>
- <out>bukopin-channel-recive</out>
+ <out>bukopin-channel-receive</out>
  <reconnect-delay>10000</reconnect-delay>
 </channel-adaptor>

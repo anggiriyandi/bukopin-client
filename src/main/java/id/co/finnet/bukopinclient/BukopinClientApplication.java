@@ -20,7 +20,7 @@ public class BukopinClientApplication {
                 
                 QMUX sender = (QMUX) NameRegistrar.get("mux.bukopin");
                 
-                ISOMsg signonRequest = new ISOMsg("0800");
+                ISOMsg signonRequest = new ISOMsg("2800");
                 signonRequest.set(12, "20181214153300");
                 signonRequest.set(33, "1234567");
                 signonRequest.set(40, "001");
@@ -31,8 +31,10 @@ public class BukopinClientApplication {
                 
                 if(response == null){
                     System.out.println("ERROR SIGNON : TIDAK MENDAPAT RESPONSE SAMPAI TIMEOUT");
+                }else{
+                    System.out.println("RESPONSE SUKSES");
                 }
-                
+               
 		SpringApplication.run(BukopinClientApplication.class, args);
 	}
 
